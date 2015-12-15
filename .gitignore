@@ -1,1 +1,11 @@
 *~
+.ansible/
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.cephdeploy.conf
+.profile
+.ssh/
+sdcluster.log
+.viminfo
