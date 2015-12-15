@@ -29,4 +29,4 @@ sudo apt-get -y autoremove
 
 sudo rm -rf /etc/salt/calamari /opt/calamari/ /var/log/calamari /etc/salt /var/log/salt /var/cache/salt
 
-sudo pip uninstall ceph-deploy
+sudo pip -y uninstall ceph-deploy
