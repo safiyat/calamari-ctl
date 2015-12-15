@@ -9,3 +9,6 @@
 .ssh/
 sdcluster.log
 .viminfo
+.gitconfig
+.mysql_history
+cloudproject/*
