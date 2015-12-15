@@ -7,9 +7,10 @@ sudo apt-get install -y --force-yes calamari-clients calamari-server diamond
 
 sudo pip install --upgrade ceph-deploy
 
+sudo chmod 0666 /var/log/calamari/cthulhu.log
+
 sudo calamari-ctl initialize --admin-username ubuntu --admin-password ubuntu --admin-email cloudplatform@snapdeal.com
 
-sudo chmod 0666 /var/log/calamari/cthulhu.log 
 
 ##
 ## On first master.
