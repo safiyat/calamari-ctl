@@ -11,8 +11,10 @@ sudo chmod 0666 /var/log/calamari/cthulhu.log
 
 echo "Copy the keys from the remote system."
 
-#sudo calamari-ctl initialize --admin-username ubuntu --admin-password ubuntu --admin-email cloudplatform@snapdeal.com
+sudo calamari-ctl initialize --admin-username ubuntu --admin-password ubuntu --admin-email cloudplatform@snapdeal.com
 
+sudo service salt-minion stop
+sudo service salt-master stop
 
 ##
 ## On first master.
