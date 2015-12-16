@@ -6,3 +6,10 @@ sudo ceph-deploy --cluster sdcluster --username ubuntu calamari connect --master
 
 ssh ubuntu@10.41.0.93 "sudo service salt-minion stop"
 ssh ubuntu@10.41.0.94 "sudo service salt-minion stop"
+
+ssh ubuntu@10.41.0.93 "echo -e \"master:\n\t- 10.41.0.127\n\t- 10.41.0.128\n\t- 10.41.0.187\" | sudo tee /etc/salt/minion.d/calamari.conf"
+ssh ubuntu@10.41.0.94 "echo -e \"master:\n\t- 10.41.0.127\n\t- 10.41.0.128\n\t- 10.41.0.187\" | sudo tee /etc/salt/minion.d/calamari.conf"
+
+ssh ubuntu@10.41.0.93 "sudo service salt-minion start"
+ssh ubuntu@10.41.0.94 "sudo service salt-minion start"
+
