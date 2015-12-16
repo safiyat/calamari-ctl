@@ -37,4 +37,8 @@ sudo scp -r /etc/salt/pki/master ubuntu@10.41.0.187:/tmp/
 ssh ubuntu@10.41.0.128 "sudo mv -f /etc/salt/pki/master /etc/salt/pki/master.bak; sudo mv -f /tmp/master /etc/salt/pki/"
 ssh ubuntu@10.41.0.187 "sudo mv -f /etc/salt/pki/master /etc/salt/pki/master.bak; sudo mv -f /tmp/master /etc/salt/pki/"
 
+sudo service salt-master start
+sudo service salt-minion start
 
+ssh ubuntu@10.41.0.93 "sudo service salt-minion start"
+ssh ubuntu@10.41.0.94 "sudo service salt-minion start"
