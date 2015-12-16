@@ -1,5 +1,7 @@
 #! /usr/bin/env sh
 
+set -o
+
 sudo apt-get update
 
 sudo apt-get install -y --force-yes calamari-clients calamari-server diamond python-pip
