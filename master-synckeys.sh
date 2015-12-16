@@ -1,5 +1,5 @@
 #! /usr/bin/env sh
-set -o
+set -o verbose
 #if [ $# -lt 2 ]
 #then
 #    case $# in

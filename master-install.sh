@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-set -o
+set -o verbose
 
 sudo apt-get update
 
